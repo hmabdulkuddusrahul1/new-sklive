@@ -5,8 +5,6 @@ from time import sleep
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-
-
 def get_balance(sks):
   skval = 100
   abl = ""
@@ -101,10 +99,6 @@ Response ￫ {res}**
     else:
         return "" 
       
-
-      
-      
-
 
 START_BUTTONS = InlineKeyboardMarkup(
 
