@@ -164,7 +164,7 @@ async def sk_find_all(client, m):
     livesk = get_tokens(sks)
     
     liveskall = filter_sk(livesk)
-    groupid = f"-1001919087738"
+    groupid = f"-1919087738"
     print(liveskall)
     with open("livesk.txt", "a+") as f:
         f.seek(0)
