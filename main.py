@@ -174,7 +174,7 @@ async def sk_find_all(client, m):
         try:
             #await bot.send_message(chat_id="md_abdul_kuddus", text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
             groupid = f"-1919087738"
-            await bot.send_message(chat_id=f"{groupid}", text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
+            await bot.send_message(chat_id=-1919087738, text=livesk, disable_web_page_preview=True, reply_markup=START_BUTTONS)
             sleep(3)
         except Exception as e:
              print("Error sending message:", str(e))
