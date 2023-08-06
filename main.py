@@ -180,7 +180,8 @@ async def sk_find_all(client, m):
              print("Error sending message:", str(e))
           
 # Assuming check is a valid regular expression pattern (string)
-check = r"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅"
+#check = r"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅"
+check = r"[\"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅\",\"𝘾𝙝𝙖𝙧𝙜𝙚𝙙\"]"
 
 @user.on_message(filters.regex(check))
 async def check_find_all(client, m):
