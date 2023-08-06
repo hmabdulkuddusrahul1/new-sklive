@@ -178,6 +178,13 @@ async def sk_find_all(client, m):
             sleep(3)
         except Exception as e:
              print("Error sending message:", str(e))
+          
+check = ["𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅","✅"]
+@user.on_message(filters.regex(check))
+async def check_find_all(client, m):
+  msg = m.text
+  await bot.send_message(chat_id=-1001806749111, text=msg)
+  
 
 print("bot Run ✅")
 
